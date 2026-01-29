@@ -153,16 +153,18 @@ footer
     
 }
 .left-card img{
-    width: 15rem;
+    max-width: 15rem;
     height: auto;
     border-radius: 1rem;
+}
+.class-image{
+    max-height: 10rem;
 }
 .right-card{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .right-card-top{
     background-color: var(--dark-gray);
@@ -368,22 +370,18 @@ footer
     .initial-section{
        min-height: 100vh;
     }
-    .about-section-cards{
-    flex-direction: row;
-    gap: 2rem;
-}
     .left-card img{
-    width: 30rem;
-    height: auto;
+        width: 30rem;
+        height: auto;
     }
     .tecnologies-icons-container{
-    grid-template-columns: repeat(3, 1fr);
-    font-size: var(--font-size-medium);
-}
-.tecnologies-icon-text{
-    width: 20rem;
-
-}
+        grid-template-columns: repeat(3, 1fr);
+        font-size: var(--font-size-medium);
+    }
+    .tecnologies-icon-text{
+        width: 20rem;
+        
+    }
 
 .mock-image{
     width: 80%;
@@ -405,6 +403,10 @@ footer
     .stats-tecnologies{
         height: 4rem;
     }
+    .about-section-cards{
+    flex-direction: row;
+    gap: 2rem;
+    }
     .tecnologies-icons-container{
         grid-template-columns: repeat(5, 1fr);
     }
@@ -417,6 +419,9 @@ footer
 
 .projects-card a{
     font-size: var(--font-size-larger);
+}
+.right-card{
+    align-items: stretch;
 }
 }   
   
