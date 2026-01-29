@@ -200,7 +200,7 @@ footer
 .right-card-bottom{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(1, 1fr);
     place-items: center;
     gap: 0.2rem;
     padding: 1rem 0;
@@ -386,6 +386,15 @@ footer
         height: 45rem;
         max-width: auto;
     }
+    .stats-tecnologies{
+        height: 4rem;
+        font-size: var(--font-size-medium);
+        text-align: center;
+        padding: 3rem;
+    }
+    .right-card-bottom{
+    grid-template-columns: repeat(2, 1fr);
+    }
     
     .change-class-buttons button {
         background-color: var(--green-shine-title);
@@ -420,12 +429,7 @@ footer
     .second-animated-span{
         margin-top: 5rem;
     }
-    .stats-tecnologies{
-        height: 4rem;
-        font-size: var(--font-size-medium);
-        text-align: center;
-        padding: 3rem;
-    }
+
     .about-section-cards{
     flex-direction: row;
     gap: 2rem;
@@ -443,9 +447,7 @@ footer
 .projects-card a{
     font-size: var(--font-size-larger);
 }
-.right-card{
-    align-items: stretch;
-}
+
 }   
   
 
