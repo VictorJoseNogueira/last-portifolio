@@ -1,4 +1,4 @@
-import mageImage from "../../assets/images/mago.png";
+import developer from "../../assets/images/dev.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleLeft, faAngleRight  } from '@fortawesome/free-solid-svg-icons'
 function AboutSection() {
@@ -9,7 +9,7 @@ function AboutSection() {
         <h2>Sobre Mim</h2>
         <div className="about-section-cards">
           <div className="left-card">
-          <img src={mageImage} alt="mageImage" />
+          <img src={developer} alt="mageImage" />
           <span><strong>Classe: </strong>Desenvolvedor Full Stack</span>
           <div className="change-class-buttons">
             <button className="change-class-left">
