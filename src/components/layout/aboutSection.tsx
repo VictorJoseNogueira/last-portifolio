@@ -15,7 +15,7 @@ function AboutSection() {
 const charactersClasses ={
     developerClass:{
       name: "Desenvolvedor Full Stack",
-      bio: <>Meu Nome é <strong>Victor Nogueira</strong> e sou Desenvolvedor Full Stack com experiência na construção de soluções digitais robustas, atuando desde a análise de requisitos até a entrega final. Tenho forte foco em automação, otimização de processos e criação de sistemas centrados no usuário. Já participei de projetos reais e acadêmicos onde liderei o desenvolvimento de sistemas integrados, aplicando metodologias ágeis, boas práticas de arquitetura e foco em entregas de alto impacto. Com perfil analítico, colaborativo e orientado a resultados, busco constantemente evoluir tecnicamente e agregar valor por meio da tecnologia."</>,
+      bio: <>"Meu Nome é <strong>Victor Nogueira</strong>  e Sou um <strong>Desenvolvedor Full Stack</strong>, com foco em gerar valor através da tecnologia. Tenho experiência na construção de <strong>sistemas integrados</strong> e <strong>automações</strong>, priorizando a <strong>escalabilidade</strong> e a <strong>resolução de problemas</strong> com código limpo."</>,
       image: developer,
       classSkills: ["Python","Vue.js","MySQL","JavaScript"]
     },
@@ -68,62 +68,66 @@ const classesKeys = useMemo(() =>
 
   const currentClass = classesKeys[currentClassIndex];
   const actualClass = charactersClasses[currentClass] 
-
-    return (
-        <section id='about-section' className="about-section">
-        <h1>Resumo das Classes</h1>
-        <h2>Sobre Mim</h2>
-        <div className="about-section-cards">
-          <div className="left-card">
-            <AnimatePresence mode="wait">
-              <motion.img
-              key={currentClassIndex}
-              src={actualClass.image}
-              alt="class-image"
-              className="class-image-swiper"
-              drag="x"
-              dragConstraints ={{left:0, right:0}}
-              onDragEnd={(_, info) => {
-                if (info.offset.x <-50) nextClass();
-                if (info.offset.x > 50) prevClass();
-              }}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{opacity:1, x:0}}
-              transition={{duration: 0.3}}
-              style={{ cursor: 'grab' }}
-              />
-            </AnimatePresence> 
-          <span><strong>Classe: </strong>{actualClass.name}</span>
-          <div className="change-class-buttons">
-            <button
-             className="change-class-left"
-             onClick={prevClass}>
+return (
+  <section id='about-section' className="about-section">
+    <h1>Resumo das Classes</h1>
+    <h2>Sobre Mim</h2>
+    <div className="about-section-cards">
+      <div className="left-card">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={currentClassIndex}
+            src={actualClass.image}
+            alt="class-image"
+            className="class-image-swiper"
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            onDragEnd={(_, info) => {
+              if (info.offset.x < -50) nextClass();
+              if (info.offset.x > 50) prevClass();
+            }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3 }}
+            style={{ cursor: 'grab' }}
+          />
+        </AnimatePresence>
+        <span><strong>Classe: </strong>{actualClass.name}</span>
+        <div className="change-class-buttons">
+          <button className="change-class-left" onClick={prevClass}>
             <FontAwesomeIcon icon={faAngleLeft} />
-            </button>
-            <button
-            className="change-class-right"
-            onClick={nextClass}>
-              <FontAwesomeIcon icon={faAngleRight} />
-            </button>
-          </div>
-          </div>
-          <div className="right-card">
+          </button>
+          <button className="change-class-right" onClick={nextClass}>
+            <FontAwesomeIcon icon={faAngleRight} />
+          </button>
+        </div>
+      </div>
+
+      <div className="right-card">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentClassIndex}
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -100, opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="motion-container"
+          >
             <div className="right-card-top">
-              <span><strong>Bio:</strong>
-              {actualClass.bio}
-              </span>
+              <span><strong>Bio:</strong> {actualClass.bio}</span>
             </div>
+
             <div className="right-card-bottom">
               {actualClass.classSkills.map((skill, index) => (
                 <span key={index} className="stats-tecnologies">{skill}</span>
               ))}
             </div>
-          </div>
-        </div>
-
-        </section>
-    )
-
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </div>
+  </section>
+);
 }
 
 export default AboutSection;
