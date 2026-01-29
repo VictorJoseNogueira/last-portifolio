@@ -1,4 +1,4 @@
-import Developer from "../../assets/images/desenvolvedor.jpg";
+import Developer from "../../assets/images/mago.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleLeft, faAngleRight  } from '@fortawesome/free-solid-svg-icons'
 function AboutSection() {

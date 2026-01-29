@@ -6,6 +6,7 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: 'last-portifolio',
   resolve: {
     alias: {
 // O alias '@' é um padrão comum para a pasta src
