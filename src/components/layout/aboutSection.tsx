@@ -83,7 +83,7 @@ const classesKeys = useMemo(() =>
               className="class-image-swiper"
               drag="x"
               dragConstraints ={{left:0, right:0}}
-              onDragEnd={(e, info) => {
+              onDragEnd={(_, info) => {
                 if (info.offset.x <-50) nextClass();
                 if (info.offset.x > 50) prevClass();
               }}
