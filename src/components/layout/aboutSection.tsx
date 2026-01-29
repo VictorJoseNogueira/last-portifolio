@@ -17,35 +17,34 @@ const charactersClasses ={
       classSkills: ["Python","Vue.js","MySQL","JavaScript"]
     },
     mageClass:{
-      name: "O Grande Mago",
-      bio: <>"Mestre das artes arcanas, o <strong>Mago</strong> canaliza energias elementares para manipular a realidade. Com alto intelecto e vasto conhecimento em feitiços complexos, ele é capaz de causar danos massivos em área e controlar o campo de batalha através da pura força mental."</>,
+      name: "Mago, Arcanista Transcendente",
+      bio: <>"Mestre da tecelagem arcana, o <strong>Mago</strong> transcende os limites físicos para dobrar a realidade à sua vontade. Através de um intelecto rigoroso e do domínio de fluxos elementares, ele converte conhecimento puro em poder destrutivo. No campo de batalha, é uma peça tática de alto impacto, capaz de ditar o ritmo do combate com feitiços de controle de área e explosões de energia devastadoras."</>,
       image: mage,
       classSkills: ["Bola de Fogo", "Teleporte", "Escudo Arcano", "Invocação"]
     },
     priestClass:{
-      name: "O Sumo-Sacerdote",
-      bio:<>O Sacerdote é o pilar espiritual do grupo, dedicado à cura e proteção. Utilizando preces e luz sagrada, ele purifica aliados de maldições e garante que a equipe suporte os desafios mais árduos, sendo a linha tênue entre a vida e a derrota.</>,
+      name: "Sumo-Sacerdote, Teurgo da Alvorada",
+      bio:<>"O <strong>Sacerdote</strong> é o alicerce espiritual e a salvaguarda da vida diante do caos. Portador da luz sagrada, sua presença transmuta o desespero em resiliência, purificando males e restaurando o vigor dos aliados através de preces ancestrais. Mais do que um curandeiro, ele é o guia estratégico que garante a sustentabilidade do grupo, provando que a verdadeira força reside na capacidade de resistir."</>,
       image: priest,
       classSkills: ["Cura Divina", "Ressurreição", "Purificação", "Benção"]
     },
     rangerClass:{
-      name: "O Caçador de Feras",
-      bio: <>"Especialista em sobrevivência e combate à distância, o <strong>Ranger</strong> possui olhos de lince e precisão cirúrgica. Mestre do rastreio e das armadilhas, ele utiliza a agilidade e o conhecimento da natureza para abater alvos antes mesmo de ser detectado.</>,
+      name: "Arqueiro, Caçador de Feras",
+      bio: <>"Especialista em letalidade à distância e sobrevivência em ambientes hostis, o <strong>Ranger</strong> combina precisão cirúrgica com instinto selvagem. Mestre do terreno e da antecipação, ele utiliza a natureza como aliada para emboscar ameaças e abater alvos prioritários antes mesmo da primeira linha de defesa ser alcançada. Sua agilidade e visão aguçada fazem dele um sentinela indispensável."</>,
       image: ranger,
       classSkills: ["Tiro de Precisão", "Camuflagem", "Rastreamento", "Armadilha de Urso"]
     },
     warriorClass:{
-      name: "O Poderoso Guerreiro",
-      bio: <>O <strong>Guerreiro</strong> é a personificação da força bruta e da resistência. Especialista em combate corpo a corpo, ele utiliza armaduras pesadas e maestria com armas para proteger seus aliados, mantendo-se firme na linha de frente contra qualquer adversidade.</>,
+      name: "Guerreiro, Protetor da Força",
+      bio: <>"O <strong>Guerreiro</strong> é o bastião inabalável da linha de frente, onde a força bruta encontra a disciplina marcial. Revestido em aço e determinação, ele atrai a fúria dos inimigos para si, protegendo os flancos mais frágeis com uma resistência física sem paralelos. No centro do conflito, ele não apenas sobrevive, mas domina o espaço, utilizando sua maestria com armas para romper formações adversárias."</>,
       image: warrior,
       classSkills: ["Golpe Esmagador", "Provocação", "Investida", "Postura Defensiva"]
     },
     assassinClass:{
-      name: "O Assassino Furtivo",
-      bio: <>O <strong>Assassino</strong> é a personificação da furtividade
-      </>,
+      name: "Assassino, Lâmina Fantasma",
+      bio: <>"O <strong>Assassino</strong> é a personificação da morte silenciosa, operando nas sombras onde a armadura e a magia não podem alcançar. Especialista em infiltração e execução, ele ignora o confronto direto para desferir golpes fatais em pontos vitais. Sua presença é uma ameaça constante e invisível, capaz de encerrar conflitos em segundos através de venenos letais e uma velocidade de reação sobre-humana."</>,
       image: Assassin,
-      classSkills: ["Assassinato", "Esconder-se", "Morte Rapida", "Envenenar Arma"]
+      classSkills: ["Assassinato", "Esconder-se", "Arremessar Arma", "Envenenar Adaga"]
     }
   }
 
