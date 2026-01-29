@@ -3,6 +3,7 @@ import mage from "assets/images/mage.png"
 import priest from "assets/images/priest.png"
 import ranger from "assets/images/ranger.png"
 import warrior from "assets/images/warrior.png"
+import Assassin from "assets/images/assassin.png"
 import { useState, useMemo} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleLeft, faAngleRight  } from '@fortawesome/free-solid-svg-icons'
@@ -38,6 +39,13 @@ const charactersClasses ={
       bio: <>O <strong>Guerreiro</strong> é a personificação da força bruta e da resistência. Especialista em combate corpo a corpo, ele utiliza armaduras pesadas e maestria com armas para proteger seus aliados, mantendo-se firme na linha de frente contra qualquer adversidade.</>,
       image: warrior,
       classSkills: ["Golpe Esmagador", "Provocação", "Investida", "Postura Defensiva"]
+    },
+    assassinClass:{
+      name: "O Assassino Furtivo",
+      bio: <>O <strong>Assassino</strong> é a personificação da furtividade
+      </>,
+      image: Assassin,
+      classSkills: ["Assassinato", "Esconder-se", "Morte Rapida", "Envenenar Arma"]
     }
   }
 
@@ -86,10 +94,9 @@ const classesKeys = useMemo(() =>
               </span>
             </div>
             <div className="right-card-bottom">
-              <span className="stats-tecnologies">Python</span>
-              <span className="stats-tecnologies">Vue.js</span>
-              <span className="stats-tecnologies">MySQL</span>
-              <span className="stats-tecnologies">JavaScript</span>
+              {actualClass.classSkills.map((skill, index) => (
+                <span key={index} className="stats-tecnologies">{skill}</span>
+              ))}
             </div>
           </div>
         </div>
