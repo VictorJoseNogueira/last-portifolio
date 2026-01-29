@@ -7,6 +7,9 @@ import Assassin from "assets/images/assassin.png"
 import { useState, useMemo} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleLeft, faAngleRight  } from '@fortawesome/free-solid-svg-icons'
+import { motion, AnimatePresence } from 'framer-motion';
+
+
 function AboutSection() {
 
 const charactersClasses ={
@@ -61,6 +64,7 @@ const classesKeys = useMemo(() =>
   const prevClass = () => {
     setCurrentClass((prev) => (prev === 0 ? classesKeys.length - 1 : prev - 1 ))
   };
+  
 
   const currentClass = classesKeys[currentClassIndex];
   const actualClass = charactersClasses[currentClass] 
@@ -71,7 +75,24 @@ const classesKeys = useMemo(() =>
         <h2>Sobre Mim</h2>
         <div className="about-section-cards">
           <div className="left-card">
-          <img src={actualClass.image} alt="class-image" />
+            <AnimatePresence mode="wait">
+              <motion.img
+              key={currentClassIndex}
+              src={actualClass.image}
+              alt="class-image"
+              className="class-image-swiper"
+              drag="x"
+              dragConstraints ={{left:0, right:0}}
+              onDragEnd={(e, info) => {
+                if (info.offset.x <-50) nextClass();
+                if (info.offset.x > 50) prevClass();
+              }}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{opacity:1, x:0}}
+              transition={{duration: 0.3}}
+              style={{ cursor: 'grab' }}
+              />
+            </AnimatePresence> 
           <span><strong>Classe: </strong>{actualClass.name}</span>
           <div className="change-class-buttons">
             <button

@@ -152,7 +152,7 @@ footer
     gap: 4rem;
     
 }
-.left-card img{
+.class-image-swiper {
     height: 25rem;
     max-width: auto;
     border-radius: 1rem;
@@ -382,7 +382,9 @@ footer
     .initial-section{
        min-height: 100vh;
     }
-    .left-card img{
+    .class-image-swiper 
+
+{
         height: 45rem;
         max-width: auto;
     }
