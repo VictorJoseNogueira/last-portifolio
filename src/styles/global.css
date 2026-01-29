@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    /*COLORS*/
+    --green-primary: #00FF55;
+    --green-shine-title: #00FF90;
+    --green-maximun: #00FF1E;
+    --footer-gray-text-color: #888;
+    --header-footer-color: #0B0B0B;
+    --color-background: #020202;
+    --font-color-dark-mode: #ffffff;
+    --font-color-light-mode: #000000;
+    --black-translucid: rgba(0, 0, 0, 0.6);
+    --dark-gray: #0E111A;
+    --gradient-top: #020202;
+    --gradient-bottom: #161616;
+    --color-gunmetal: #354052;
+    --full-dark: #0B0B0B;
+    /*SIZES*/
+    --h1-dev-title-shine-size: 4rem;
+    --H1-font-size-mobile: 3.2rem;
+    --H2-font-size-mobile: 2rem;
+    --H3-font-size-mobile: 1.5rem;
+    --H4-font-size-mobile: 1.25rem;
+    --H5-font-size-mobile: 1rem;
+    --H6-font-size-mobile: 0.75rem;
+    --h1-dev-title-shine-size: 4rem;
+    --H1-font-size-tablet: 6rem;
+    --H2-font-size-tablet: 3.6rem;
+    --H3-font-size-tablet: 2.4rem;
+    --H4-font-size-tablet: 1.8rem;
+    --H5-font-size-tablet: 1.4rem;
+    --H6-font-size-tablet: 1rem;
+    --p-font-large: 1.6rem;
+    --font-size-medium: 1.4rem;
+    --font-size-small: 1.2rem;
+    --font-size-tiny: 1rem;
+    --section-jump-height: 8rem;
+    /*FONTS*/
+    --press-start: "Press Start 2P", system-ui;
+    --press-start: "Press Start 2P", system-ui;
+
+    /*
+    BreackPoints
+    Mobile: 0px ate 768
+    Tablet: ate 1024px
+    Desktop: 1440px +
+    */
+}
+/*reset css*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Ajuste base do documento */
+html {
+  font-size: 62.5%; /* 10px = 1rem (facilita cálculo mental) */
+  scroll-behavior: smooth;
+}
+
+/* 3. Corpo da página */
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, 
+               "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+/* 4. Remove estilos padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 5. Links sem decoração */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Imagens e mídia responsivas */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inputs e botões herdam fonte */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Remove bordas padrão */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* 9. Tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+    background: #020202;
+    color: var(--font-color-dark-mode);
+}
+
+/*css*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--font-color-dark-mode);
+    margin: 0.1rem;
+    font-family: var(--press-start);
+}
+
+button {
+    cursor: pointer;
+    color: var(--font-color-dark-mode);
+}
+dialog {
+    background-color: var(--color-background);
+    color: var(--font-color-dark-mode);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+main{
+    flex: 1;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section{
+    scroll-margin-top: 8rem;
+    height: fit-content;  
+    padding: 4rem 2rem;  
+}
+
+.initial-section{
+    background-image: url(../../public/GreenWoods.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 1.6rem;
+    }
+    section{
+        background-color: rgb(88, 0, 0);
+    }
+
+  
+}
+
+
+@media screen and (min-width: 1440px) {
+    section{
+        background-color: rgb(0, 53, 11);
+    }
+  
+}
