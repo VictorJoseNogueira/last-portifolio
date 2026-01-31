@@ -2,7 +2,7 @@ function ContactSection() {
     return (
         <section id='contact-section' className="contact-section">
         <h1>Contato</h1>
-        <span>Email:</span> <a href="mailto:Jl6rD@example.com">Jl6rD@example.com</a>
+        <span>Email:</span> <a href="mailto:victorvalim1@gmail.com">victorvalim1@gmail.com</a>
         </section>
     );
 }
