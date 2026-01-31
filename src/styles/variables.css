@@ -29,6 +29,15 @@ footer
   color: var(--green-primary);
   font-weight: bold;
 }
+
+.contacts-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
 .header-container{
     width: 100%;
     max-width: 100%;
@@ -146,6 +155,7 @@ footer
     flex-direction: column;
     justify-content: center;
     width: 90%;
+
 }
 .left-card{
     width: 100%;
@@ -154,7 +164,10 @@ footer
     align-items: center;
     padding: 1rem;
     gap: 4rem;
-    
+    animation: apper-left-to-rigth linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
 }
 .class-image-swiper {
     height: 25rem;
@@ -169,6 +182,9 @@ footer
     height: 100%;
     display: flex;
     flex-direction: column;
+    animation: apper-rigth-to-left linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 .right-card-top{
     background-color: var(--dark-gray);
@@ -241,6 +257,7 @@ footer
     place-items: center;
     margin-top: 4rem;
     font-size: var(--font-size-tiny);
+
 }
 .tecnologies-icons-container span{
     min-width: fit-content;
@@ -258,6 +275,9 @@ footer
     min-width: fit-content;
     width: 12rem;
     transition: 2s ease 0.3s;
+    animation: apper linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
     
 }
 .tecnologies-icon-text:hover {
@@ -287,6 +307,9 @@ footer
     background-color: var(--full-dark);
     padding: 2rem;
     gap: 1rem;
+    animation: rigth-to-left linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
 }
 .project-links{
     display: flex;
@@ -374,63 +397,6 @@ footer
 .letter-button-links:hover{
     box-shadow: var(--green-maximun) 0px 0px 5px 1px;
 }
-
-
-
-
-
-
-
-@keyframes jumping {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-20px);
-    }
-}
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes flicker {
-  /* Estado normal: Acesa */
-0%, 15.5%, 17.5%, 19.5%, 21.5%, 70%, 100% {
-    opacity: 1;
-  }
-
-  /* Sequência de Mau Contato (3 piscadas rápidas) */
-  16%, 18%, 20% {
-    opacity: 0;
-  }
-
-  /* Estado: Meia-luz (Instabilidade elétrica) */
-  16.5%, 18.5%, 20.5% {
-    opacity: 0.4;
-  }
-
-  /* Grande Falha (Apaga por mais tempo) */
-  60%, 68% {
-    opacity: 0;
-  }
-
-  /* Oscilação antes de voltar ao normal */
-  68.5% {
-    opacity: 0.5;
-  }
-}
-
-
-
-
-
 
 
 @media screen and (min-width: 768px) {
@@ -555,7 +521,7 @@ footer
 
 
 .letter-container{
-    width: 80%;
+    width: 65%;
     text-align: center;
     gap: 0.5rem;
     align-items: center;
@@ -563,11 +529,12 @@ footer
 }
 .letter-button-links{
     padding: 1rem 2rem;
-    width: 100%;
+    width: 40%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 2rem;
     cursor: pointer;
+    text-align: left;    
 }
 
 .letter-button-links strong {
@@ -581,7 +548,125 @@ footer
     width: 70%;
 }
 
+.footer-container{
+    font-size: var(--font-larger);
+}
+
+.contacts-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
 
 }   
   
 
+
+
+
+
+@keyframes jumping {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes flicker {
+  /* Estado normal: Acesa */
+0%, 15.5%, 17.5%, 19.5%, 21.5%, 70%, 100% {
+    opacity: 1;
+  }
+
+  /* Sequência de Mau Contato (3 piscadas rápidas) */
+  16%, 18%, 20% {
+    opacity: 0;
+  }
+
+  /* Estado: Meia-luz (Instabilidade elétrica) */
+  16.5%, 18.5%, 20.5% {
+    opacity: 0.4;
+  }
+
+  /* Grande Falha (Apaga por mais tempo) */
+  60%, 68% {
+    opacity: 0;
+  }
+
+  /* Oscilação antes de voltar ao normal */
+  68.5% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes apper-left-to-rigth {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+@keyframes apper-rigth-to-left {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes apper {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+@-webkit-keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}

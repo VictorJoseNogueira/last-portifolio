@@ -16,19 +16,19 @@ function ContactSection() {
         },
         github: {
             buttonName: "Github",
-            textLabel:"github/VictorJoseNogueira",
+            textLabel:"VictorJoseNogueira",
             link: 'https://github.com/VictorJoseNogueira',
             icon: faGithub
         },
         linkedin: {
             buttonName: "Linkedin",
-            textLabel:"linkedin/in/victor-nogueira-dev",
+            textLabel:"victor-jose-nogueira-santos",
             link: 'https://www.linkedin.com/in/victor-jose-nogueira-santos',
             icon: faLinkedin
         },
         watsapp: {
             buttonName: "Watsapp",
-            textLabel:"wa.me/+55 (11)9 4907-9807",
+            textLabel:"+55 (11)9 4907-9807",
             link: 'https://wa.me/5511949079807',
             icon: faWhatsapp
         },

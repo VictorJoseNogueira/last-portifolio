@@ -18,7 +18,7 @@ function HeaderComponent() {
   return (
     <>
       <div className="header-container">
-        <h1 className="header-title">Victor Nogueira</h1>  
+        <h1 className="header-title"><a href="/">Victor Nogueira</a></h1>  
           { Object.entries(navigationDict).map(([key, value]) => (
               <a className="navbar" href={key}>{value}</a>
           ))}
