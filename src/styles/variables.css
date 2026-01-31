@@ -33,7 +33,7 @@ footer
     width: 100%;
     max-width: 100%;
     padding: 10px;
-    background-color: green;
+    background-color: var(--green-maximun);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +48,10 @@ footer
 .header-container button {
     margin: 5px;
 }
+.navbar{
+    display: none;
+}
+
 .menu-modal{
     border: 2px solid var(--green-primary);
     width: 100%;
@@ -428,6 +432,9 @@ footer
 
 }
 @media screen and (min-width: 1280px) {
+    .header-container{
+        height: 5rem;
+    }
     .catch-phrase{
         width: 50%;
     }
@@ -450,10 +457,21 @@ footer
     .projects-card{
         width: 100%;
     }
+    .nav-list-larger{
+        background-color: red;
+        height: 20px;
+    }
+
 }
 
 .projects-card a{
     font-size: var(--font-size-larger);
+}
+.navbar{
+    display: flex;
+}
+.toggle-menu{
+    display: none;
 }
 
 }   

@@ -7,12 +7,21 @@ import { useState } from "react"
 function HeaderComponent() {
   
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigationDict = {
+    '#initial-section': 'Inicio',
+    '#about-section': 'Sobre',
+    '#technologies-section': 'Tecnologias',
+    '#projects-section': 'Projetos',
+    '#contact-section': 'Contato'
+  }
   
   return (
     <>
       <div className="header-container">
         <h1 className="header-title">Victor Nogueira</h1>  
+          { Object.entries(navigationDict).map(([key, value]) => (
+              <a className="navbar" href={key}>{value}</a>
+          ))}
         <nav>
           <button className="toggle-menu" aria-expanded={isOpen} onClick={() => setIsOpen(!isOpen)}>
             <FontAwesomeIcon icon={faList} />
