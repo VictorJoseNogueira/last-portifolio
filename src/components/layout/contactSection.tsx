@@ -23,7 +23,7 @@ function ContactSection() {
         linkedin: {
             buttonName: "Linkedin",
             textLabel:"linkedin/in/victor-nogueira-dev",
-            link: 'https://linkedin.com/in/victor-nogueira-dev',
+            link: 'https://www.linkedin.com/in/victor-jose-nogueira-santos',
             icon: faLinkedin
         },
         watsapp: {
