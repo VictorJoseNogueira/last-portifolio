@@ -5,7 +5,7 @@ function FooterComponent() {
     <div className="footer">
         <div className="footer-container">
                 <span className="copyright">
-                    &copy; 2026 <strong>PIXEL MAGE</strong>. All Rights Reserved.
+                    &copy; 2026 <strong>VICTOR NOGUEIRA</strong>. All Rights Reserved.
                 </span>
                 <span className="tagline">
                     <span>
