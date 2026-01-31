@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
 :root{
     /*COLORS*/
     --green-primary: #03b940;
@@ -16,6 +19,9 @@
     --gradient-bottom: #161616;
     --color-gunmetal: #354052;
     --full-dark: #0B0B0B;
+    --brown-letter: #895D3B;
+    --beige-letter: #F2E2BA;
+
     /*SIZES*/
     --h1-dev-title-shine-size: 4rem;
     --H1-font-size-mobile: 3.2rem;
@@ -35,10 +41,11 @@
     --font-size-medium: 1.4rem;
     --font-size-small: 1.2rem;
     --font-size-tiny: 1rem;
+    --font-size-extra-tiny: 0.8rem;
     --section-jump-height: 8rem;
     /*FONTS*/
     --press-start: "Press Start 2P", system-ui;
-    --press-start: "Press Start 2P", system-ui;
+    --cursive: "Cedarville Cursive", system-ui;
 
     /*
     BreackPoints

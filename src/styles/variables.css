@@ -16,8 +16,8 @@ footer
   
   /* Tipografia */
   color: var(--footer-gray-text-color);
-  font-size: 0.75rem;     /* 12px - Tamanho elegante para footer */
-  font-family: 'Courier New', monospace; /* Toque "Dev/Pixel" */
+  font-size: 0.75rem;
+  font-family: 'Courier New', monospace;
   letter-spacing: 0.05em;
   text-align: center;
 }
@@ -26,7 +26,7 @@ footer
   font-weight: 700;
 }
 .tagline .highlight {
-  color: var(--green-primary); /* Ex: Roxo mágico */
+  color: var(--green-primary);
   font-weight: bold;
 }
 .header-container{
@@ -95,10 +95,10 @@ footer
 .initial-section h1{
     font-size: var(--H1-font-size-mobile);
     text-shadow: 
-    -2px -2px 0 var(--green-shine-title),   /* Esquerda + Cima -> Vermelho */
-     2px -2px 0 var(--green-shine-title),   /* Direita + Cima -> Vermelho (Prioridade para Cima) */
-    -2px  2px 0 #000,  /* Esquerda + Embaixo -> Preto (Prioridade para Embaixo) */
-     2px  2px 0 #000;  /* Direita + Embaixo -> Preto */
+    -2px -2px 0 var(--green-shine-title),
+     2px -2px 0 var(--green-shine-title),
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
     
     }
 .initial-section h1 strong{
@@ -253,7 +253,7 @@ footer
     justify-content: center;
     gap: 0.5rem;
     background-color: var(--dark-gray);
-    border: var(--color-gunmetal) solid 2px;
+    border: var(--green-maximun) solid 2px;
     padding: 0.5rem;
     min-width: fit-content;
     width: 12rem;
@@ -283,7 +283,7 @@ footer
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: var(--color-gunmetal) solid 2px;
+    border: var(--green-maximun) solid 2px;
     background-color: var(--full-dark);
     padding: 2rem;
     gap: 1rem;
@@ -294,7 +294,7 @@ footer
     gap: 4rem;
 }
 .project-links a{
-    background-color: var(--color-gunmetal);
+    background-color: var(--green-maximun);
     padding: 1rem;
 }
 .mock-image{
@@ -320,6 +320,67 @@ footer
 .projects-card:hover {
     transform: scale(1.1);
 }
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.letter-container{
+    border: var(--green-shine-title) solid 4px;
+    width: 90%;
+    min-height: fit-content;
+    padding: 4rem 1rem;
+    box-shadow: var(--green-maximun) 0px 0px 5px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: var(--font-size-tiny);
+    margin-bottom: 2rem;
+}
+.cursive-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    background-color:var(--green-maximun);
+    box-shadow: var(--green-maximun) 0px 0px 5px 1px;
+}
+.cursive-text{
+    font-size: var(--font-size-medium);
+    width: 80%;
+    text-align: center;
+    gap: 0.5rem;
+}
+.letter-button-links{
+    padding: 1rem 2rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.letter-button-links strong {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.letter-button-links:hover{
+    box-shadow: var(--green-maximun) 0px 0px 5px 1px;
+}
+
+
+
+
+
+
+
 @keyframes jumping {
     from {
         transform: translateY(0);
@@ -365,6 +426,13 @@ footer
     opacity: 0.5;
   }
 }
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) {
 
     .second-animated-span{
@@ -431,6 +499,17 @@ footer
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1280px) {
     .header-container{
         height: 5rem;
@@ -473,6 +552,35 @@ footer
 .toggle-menu{
     display: none;
 }
+
+
+.letter-container{
+    width: 80%;
+    text-align: center;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.letter-button-links{
+    padding: 1rem 2rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.letter-button-links strong {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.cursive-text{
+    font-size: 2rem;
+}
+.cursive-container{
+    width: 70%;
+}
+
 
 }   
   
