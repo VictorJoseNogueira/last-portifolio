@@ -17,37 +17,35 @@ const charactersClasses ={
       name: "Desenvolvedor Full Stack",
       bio: <>"Meu Nome é <strong>Victor Nogueira</strong>  e Sou um <strong>Desenvolvedor Full Stack</strong>, com foco em gerar valor através da tecnologia. Tenho experiência na construção de <strong>sistemas integrados</strong> e <strong>automações</strong>, priorizando a <strong>escalabilidade</strong> e a <strong>resolução de problemas</strong> com código limpo."</>,
       image: developer,
-      classSkills: ["Python","Vue.js","MySQL","JavaScript"]
-    },
+      classSkills: ["Sistemas Integrados", "Automação de Processos", "Escalabilidade", "Clean Code"]    },
     mageClass:{
-      name: "Mago, Arcanista Transcendente",
-      bio: <>"Mestre da tecelagem arcana, o <strong>Mago</strong> transcende os limites físicos para dobrar a realidade à sua vontade. Através de um intelecto rigoroso e do domínio de fluxos elementares, ele converte conhecimento puro em poder destrutivo. No campo de batalha, é uma peça tática de alto impacto, capaz de ditar o ritmo do combate com feitiços de controle de área e explosões de energia devastadoras."</>,
-      image: mage,
-      classSkills: ["Bola de Fogo", "Teleporte", "Escudo Arcano", "Invocação"]
+        name: "Mago (Foco: Ciência de Dados e Lógica)",
+        bio: <>"Enxergo padrões onde outros veem apenas o caos. Através dos meus estudos em <strong> Ciência de Dados</strong>, manipulo as artes arcanas de <strong>Python, Pandas e Numpy</strong> para transmutar dados brutos em conhecimento valioso. Minha magia reside na capacidade analítica e no domínio de algoritmos complexos, permitindo-me prever tendências e moldar a realidade através de modelos estatísticos e automações que parecem impossíveis para os não iniciados."</>,
+        image: mage,
+        classSkills: ["Python Arcano (Core)", "Transmutação Pandas", "Alquimia Numpy", "Predição de Dados"]    },
+    warriorClass:{
+        name: "Guerreiro (Foco: Estrutura e Fundamentos)",
+        bio: <>"Sou o pilar que sustenta a integridade do projeto. Minha força vem da base sólida que construí em <strong>Tecnologia da Informação</strong>, dominando as estruturas fundamentais que permitem a qualquer sistema permanecer de pé. Como um veterano que entende a importância da disciplina, utilizo <strong>POO</strong> (Programação Orientada a Objetos) para criar arquiteturas robustas e organizadas, garantindo que o código seja resistente a falhas e pronto para o combate em ambientes de alta pressão."</>,
+        image: warrior,
+    classSkills: ["Fortaleza POO", "Arquitetura Java", "Estrutura de Dados", "Resiliência Sistêmica"]
     },
     priestClass:{
-      name: "Sumo-Sacerdote, Teurgo da Alvorada",
-      bio:<>"O <strong>Sacerdote</strong> é o alicerce espiritual e a salvaguarda da vida diante do caos. Portador da luz sagrada, sua presença transmuta o desespero em resiliência, purificando males e restaurando o vigor dos aliados através de preces ancestrais. Mais do que um curandeiro, ele é o guia estratégico que garante a sustentabilidade do grupo, provando que a verdadeira força reside na capacidade de resistir."</>,
-      image: priest,
-      classSkills: ["Cura Divina", "Ressurreição", "Purificação", "Benção"]
+        name: "Clérigo (Foco: Segurança e Suporte)",
+        bio:<>"Minha missão é proteger a integridade dos sistemas e a santidade dos dados. Com conhecimento em <strong>Cibersegurança pelo programa Hackers do Bem e DIO</strong>, atuo como um guardião, purificando vulnerabilidades e estabelecendo perímetros de defesa. Utilizo as melhores práticas de <strong>Segurança da Informação</strong> para garantir que o fluxo de dados permaneça seguro e que a infraestrutura esteja sempre sob proteção contra as ameaças que espreitam nas sombras da rede."</>,
+        image: priest,
+        classSkills: ["Escudo Hackers do Bem", "Defesa Cibernética", "Purificação de Vulnerabilidades", "Protocolo de Segurança"]
     },
     rangerClass:{
-      name: "Arqueiro, Caçador de Feras",
-      bio: <>"Especialista em letalidade à distância e sobrevivência em ambientes hostis, o <strong>Ranger</strong> combina precisão cirúrgica com instinto selvagem. Mestre do terreno e da antecipação, ele utiliza a natureza como aliada para emboscar ameaças e abater alvos prioritários antes mesmo da primeira linha de defesa ser alcançada. Sua agilidade e visão aguçada fazem dele um sentinela indispensável."</>,
-      image: ranger,
-      classSkills: ["Tiro de Precisão", "Camuflagem", "Rastreamento", "Armadilha de Urso"]
-    },
-    warriorClass:{
-      name: "Guerreiro, Protetor da Força",
-      bio: <>"O <strong>Guerreiro</strong> é o bastião inabalável da linha de frente, onde a força bruta encontra a disciplina marcial. Revestido em aço e determinação, ele atrai a fúria dos inimigos para si, protegendo os flancos mais frágeis com uma resistência física sem paralelos. No centro do conflito, ele não apenas sobrevive, mas domina o espaço, utilizando sua maestria com armas para romper formações adversárias."</>,
-      image: warrior,
-      classSkills: ["Golpe Esmagador", "Provocação", "Investida", "Postura Defensiva"]
+        name: "Arqueiro (Foco: Precisão e Front-end)",
+        bio: <>"Meu foco é a precisão estética e a experiência do usuário. Do meu arsenal, disparo soluções precisas utilizando <strong>React, Vue.js e Bootstrap</strong> para atingir o alvo: uma interface impecável. Com o olhar treinado em <strong>Design Thinking e Figma</strong>, garanto que cada interação seja certeira e funcional. Não importa a distância entre a ideia e a execução, eu ajusto minha mira para entregar um front-end fluido, moderno e tecnicamente perfeito."</>,
+        image: ranger,
+        classSkills: ["Precisão React/Vue", "Mira Design Thinking", "Estética Figma", "Estilo Bootstrap"]
     },
     assassinClass:{
-      name: "Assassino, Lâmina Fantasma",
-      bio: <>"O <strong>Assassino</strong> é a personificação da morte silenciosa, operando nas sombras onde a armadura e a magia não podem alcançar. Especialista em infiltração e execução, ele ignora o confronto direto para desferir golpes fatais em pontos vitais. Sua presença é uma ameaça constante e invisível, capaz de encerrar conflitos em segundos através de venenos letais e uma velocidade de reação sobre-humana."</>,
-      image: Assassin,
-      classSkills: ["Assassinato", "Esconder-se", "Arremessar Arma", "Envenenar Adaga"]
+        name: "Assassino (Foco: Backend e Agilidade)",
+        bio: <>"Minha maestria reside no que é invisível aos olhos, mas vital para a sobrevivência do reino. Sou o arquiteto das sombras, utilizando <strong>Node.js, Flask, Express e Django</strong> para construir caminhos lógicos onde a informação flui com velocidade letal e precisão cirúrgica. Assim como um mestre na furtividade, garanto que as engrenagens do servidor e os <strong>Bancos de Dados SQL</strong> operem com máxima performance e zero desperdício. Enquanto o usuário vê a interface, eu governo o submundo do código, garantindo que cada requisição seja atendida instantaneamente, antes mesmo que o sistema perceba minha execução."</>,
+        image: Assassin,
+        classSkills: ["Execução Node/Express", "Golpe Django/Flask", "Infiltração SQL", "Performance Oculta"]
     }
   }
 
