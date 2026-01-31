@@ -11,7 +11,7 @@ function ContactSection() {
         emal: {
             buttonName: "Email",
             textLabel:"victorvalim1@gmail.com",
-            link: '',
+            link: 'mailto:victorvalim1@gmail.com',
             icon: faEnvelope
         },
         github: {
