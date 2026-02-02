@@ -149,9 +149,9 @@ const tecnoSkills = {
              <div className="tecnologies-icons-container">
             {
               Object.values(tecnoSkills).map((skill, index) => (
-                  <div className="tecnologies-icon-text">
+                  <div className="tecnologies-icon-text animation-appear">
 
-                <img className='tecnologies-icons' src={skill.icon} alt={skill.name} />
+                <img className='tecnologies-icons ' src={skill.icon} alt={skill.name} />
                 <span key={index}>{skill.name}</span>
                   </div>
             ))

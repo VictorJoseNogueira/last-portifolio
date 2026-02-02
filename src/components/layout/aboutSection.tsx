@@ -71,7 +71,7 @@ return (
     <h1>Resumo das Classes</h1>
     <h2>Sobre Mim</h2>
     <div className="about-section-cards">
-      <div className="left-card">
+      <div className="left-card animation-appear-left-to-right">
         <AnimatePresence mode="wait">
           <motion.img
             key={currentClassIndex}
@@ -101,16 +101,7 @@ return (
         </div>
       </div>
 
-      <div className="right-card">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentClassIndex}
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            className="motion-container"
-          >
+      <div className="right-card animation-appear-left-to-right">
             <div className="right-card-top">
               <span><strong>Bio:</strong> {actualClass.bio}</span>
             </div>
@@ -120,8 +111,6 @@ return (
                 <span key={index} className="stats-tecnologies">{skill}</span>
               ))}
             </div>
-          </motion.div>
-        </AnimatePresence>
       </div>
     </div>
   </section>

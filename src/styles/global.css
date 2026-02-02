@@ -1,10 +1,15 @@
+/* ==========================================================================
+   1. IMPORTS
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
+/* ==========================================================================
+   2. VARIÁVEIS (CUSTOM PROPERTIES)
+========================================================================== */
 
-:root{
-    /*COLORS*/
+:root {
+    /* COLORS */
     --green-primary: #03b940;
     --green-shine-title: #00ff95;
     --green-maximun: #0e7a34;
@@ -22,7 +27,7 @@
     --brown-letter: #895D3B;
     --beige-letter: #F2E2BA;
 
-    /*SIZES*/
+    /* SIZES */
     --h1-dev-title-shine-size: 4rem;
     --H1-font-size-mobile: 3.2rem;
     --H2-font-size-mobile: 2rem;
@@ -43,18 +48,22 @@
     --font-size-tiny: 1rem;
     --font-size-extra-tiny: 0.8rem;
     --section-jump-height: 8rem;
-    /*FONTS*/
+
+    /* FONTS */
     --press-start: "Press Start 2P", system-ui;
     --cursive: "Cedarville Cursive", system-ui;
 
     /*
-    BreackPoints
+    BreakPoints
     Mobile: 0px ate 768
     Tablet: ate 1024px
     Desktop: 1440px +
     */
 }
-/*reset css*/
+
+/* ==========================================================================
+   3. RESET & BASE ADJUSTMENTS
+   ========================================================================== */
 *,
 *::before,
 *::after {
@@ -63,98 +72,86 @@
     padding: 0;
 }
 
-/* 2. Ajuste base do documento */
 html {
-  font-size: 62.5%; /* 10px = 1rem (facilita cálculo mental) */
-  scroll-behavior: smooth;
+    font-size: 62.5%; /* 10px = 1rem */
+    scroll-behavior: smooth;
 }
 
-/* 3. Corpo da página */
-body {
-  min-height: 100vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 
-               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, 
-               "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  text-rendering: optimizeLegibility;
-}
-
-/* 4. Remove estilos padrão de listas */
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
 
-/* 5. Links sem decoração */
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
-/* 6. Imagens e mídia responsivas */
 img,
 picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
-/* 7. Inputs e botões herdam fonte */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* 8. Remove bordas padrão */
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-/* 9. Tabelas */
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
+/* ==========================================================================
+   4. GLOBAL ELEMENTS
+   ========================================================================== */
 body {
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+                 "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, 
+                 "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
     background: #020202;
     color: var(--font-color-dark-mode);
-}
-
-/*css*/
-body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    color: var(--font-color-dark-mode);
     margin: 0.1rem;
+    /* Sobrescrita pela fonte customizada conforme original */
     font-family: var(--press-start);
 }
 
 button {
+    border: none;
+    background: none;
     cursor: pointer;
+    font: inherit;
     color: var(--font-color-dark-mode);
 }
+
+input,
+textarea,
+select {
+    font: inherit;
+}
+
 dialog {
     background-color: var(--color-background);
     color: var(--font-color-dark-mode);
 }
-header{
+
+/* ==========================================================================
+   5. LAYOUT SECTIONS (HEADER, MAIN, FOOTER)
+   ========================================================================== */
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    
 }
-main{
+
+main {
     flex: 1;
     margin-top: 8rem;
     display: flex;
@@ -164,15 +161,19 @@ main{
     width: 100%;
 }
 
-section{
+section {
     scroll-margin-top: 8rem;
     height: fit-content;  
     padding: 4rem 2rem;  
 }
 
-.initial-section{
+/* ==========================================================================
+   6. COMPONENTS /
+   ========================================================================== */
+.initial-section {
     background-image: url(../../public/GreenWoods.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
