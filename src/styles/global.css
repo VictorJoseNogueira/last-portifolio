@@ -105,7 +105,7 @@ table {
    4. GLOBAL ELEMENTS
    ========================================================================== */
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 
                  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, 
                  "Open Sans", "Helvetica Neue", sans-serif;
