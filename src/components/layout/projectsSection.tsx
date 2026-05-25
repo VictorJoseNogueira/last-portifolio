@@ -2,19 +2,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import mockImage from 'assets/images/mock-img.png'
+import vagarimpoImage from 'assets/images/vagarimpo-img.png'
 
 
 function ProjectsSection() {
     const projectList = {
   projeto1: {
-    projectTitle: 'Projeto 1',
-    projectImageIcon: mockImage,
-    projectDescription: 'lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    projectTitle: 'VaGarimpo',
+    projectImageIcon: vagarimpoImage,
+    projectDescription: 'Bot inteligente de scraping e triagem de vagas. Captura dados via Playwright, utiliza LLMs (Groq) em duas etapas com rotação de modelos para avaliar a aderência técnica e automatiza o envio de alertas críticos por SMTP.',
     projectLink: '#',
-    projectClass: 'Full Stack',
-    codeLink: '#',
+    projectClass: 'Full Stack / AI Automation',
+    codeLink: 'https://github.com/VictorJoseNogueira/VaGarimpo',
     demoLink: '#',
-    usedTechnologies: ['React.js', 'Python', 'MySQL'],
+    usedTechnologies: ['Python', 'Playwright', 'MongoDB', 'Groq API (LLM)', 'Docker'],
   },
 
   projeto2: {
