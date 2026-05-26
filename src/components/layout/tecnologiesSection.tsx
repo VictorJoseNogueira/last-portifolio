@@ -25,7 +25,7 @@ import vueSVG from 'assets/icons/vueSVG.svg';
 
 function TecnologiesSection() {
 
-const tecnoSkills = {
+  const tecnoSkills = {
   python: {
     name: 'Python',
     icon: pythonSVG,
@@ -136,28 +136,25 @@ const tecnoSkills = {
     icon: figmaSVG,
     category: 'Tools & Design'
   }
-};
+  };
 
+  return (
+          <section id='technologies-section' className="technologies-section">
+          <h1>skills</h1>
+          <h2>Tecnologias</h2>
 
+            <div className="tecnologies-icons-container">
+          {
+            Object.values(tecnoSkills).map((skill, index) => (
+                <div className="tecnologies-icon-text animation-appear">
 
-
-    return (
-            <section id='technologies-section' className="technologies-section">
-            <h1>skills</h1>
-            <h2>Tecnologias</h2>
-
-             <div className="tecnologies-icons-container">
-            {
-              Object.values(tecnoSkills).map((skill, index) => (
-                  <div className="tecnologies-icon-text animation-appear">
-
-                <img className='tecnologies-icons ' src={skill.icon} alt={skill.name} />
-                <span key={index}>{skill.name}</span>
-                  </div>
-            ))
-            }
-            </div>
-        </section>
-    );
+              <img className='tecnologies-icons ' src={skill.icon} alt={skill.name} />
+              <span key={index}>{skill.name}</span>
+                </div>
+          ))
+          }
+          </div>
+      </section>
+  );
 }
 export default TecnologiesSection
