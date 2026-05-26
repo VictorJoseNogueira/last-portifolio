@@ -38,6 +38,7 @@ function HeaderComponent() {
                       <li> <a href="#technologies-section" onClick={() => setIsOpen(false)}>Tecnologias</a></li>
                       <li> <a href="#projects-section" onClick={() => setIsOpen(false)}>Projetos</a> </li>
                       <li> <a href="#contact-section" onClick={() => setIsOpen(false)}>Contato</a> </li>
+                      <li>deletar-me</li>
                     </ul>
                   </nav>
               </div>
